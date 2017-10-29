@@ -1,4 +1,0 @@
-To run this project, type the following commands at the cmd:
-1) npm i
-2) gulp build
-3) gulp
