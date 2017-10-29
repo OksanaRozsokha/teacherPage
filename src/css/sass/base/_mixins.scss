@@ -1,0 +1,44 @@
+@mixin open-sans-reg($size) {
+  font: $size "open-sans-reg", sans-serif;
+}
+@mixin open-sans-bold($size) {
+  font: $size "open-sans-bold", sans-serif;
+}
+//before - after
+@mixin pseudo( $content, $display){
+  content: $content;
+  display: $display;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin section-bg($background-url) {
+  background: url($background-url) 50% 0 no-repeat fixed;
+  background-size: cover;
+}
+
+@mixin small-bg($background-url) {
+  background: url($background-url) 50% 50% no-repeat;
+}
+
+@mixin  rotate($deg) {
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+  @else if $media == wide-handhelds {
+    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
+  }
+}

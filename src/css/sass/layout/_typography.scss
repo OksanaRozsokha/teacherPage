@@ -1,0 +1,75 @@
+.text {
+  font-size: 1.4rem;
+  line-height: 1.875em;
+  color: $text-color; 
+
+  &-prim-color {
+    color: $primary-color;
+  }
+
+  &-middle {
+    font-size: 1.6rem;
+  }
+
+  &-big {
+    font-size: 2.5rem;
+    @media (max-width: 772px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &-italic {
+    font-style: italic;
+  }
+
+  &-upper {
+      text-transform: uppercase;
+  }
+
+  &-center {
+      text-align: center;
+  }
+
+}
+
+
+.title {
+    @include open-sans-bold(2.5rem);
+    color: $text-color;
+    text-transform: uppercase;    
+
+    &-small {
+        font-size: 1.6rem;
+    }
+
+    &-middle {
+        font-size: 3.5rem;
+    }
+
+    &-big {
+        font-size: 7rem;
+
+        @media (max-width: 772px) {
+            font-size: 4rem;
+        }
+    }
+
+    &-prim-color {
+        color: $primary-color;
+    }
+
+    &-brand-color {
+        color: $brand-color;
+    }
+
+    &-head {
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 0.25em;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+}

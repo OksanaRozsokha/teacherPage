@@ -1,0 +1,13 @@
+.awards {
+    background: $background-color;
+}
+
+.awards-list__item {
+    padding: 1rem;
+    background: $award-item-color;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+}
+.awards-list__item.awards-list__item--color {
+    background: $award-item-even-color;
+}

@@ -1,0 +1,35 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;    
+    display: flex;
+    align-items: center;
+    background: $header-opacity-color;
+    padding: 1rem 0;
+
+    &.afterScroll {
+        //opacity: 0;
+        top: -70px;
+
+        &:hover {
+            //opacity: 0.8;
+            top: 0;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+
+.menu-link {
+    &:hover {
+        text-decoration: none;
+        color: $brand-color;
+    }
+}

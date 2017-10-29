@@ -1,0 +1,45 @@
+.intro {  
+  min-height: 100vh;
+  @include section-bg("../../img/8.jpg");
+  padding: 10rem 0 6rem; 
+}
+
+.photo-wrap {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+    /*&:hover {
+        .hover-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }*/
+}
+
+.hover-block {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $brand-hover-color;
+}
+
+.intro-img {
+    display: block;
+    width: 100%;
+}
+
+.heading {
+    margin: 0 auto 5rem;    
+}
+
+.info-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: $primary-opacity-color;
+}
