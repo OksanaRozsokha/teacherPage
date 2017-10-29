@@ -1,8 +1,8 @@
-.awards {
+.photos {
     background: $background-color;
 }
 
-.awards-list__item {
+/*.photos-list__item {
     padding: 1rem;
     background: $award-item-color;
     border-radius: .5rem;
@@ -10,4 +10,12 @@
 }
 .awards-list__item.awards-list__item--color {
     background: $award-item-even-color;
+}*/
+.img-container {
+    height: 250px;
+    width: 100%;
+}
+.photo-item {
+    height: 100%;
+    width: 100%;
 }

@@ -29,6 +29,9 @@
   &-center {
       text-align: center;
   }
+  &-underline {
+      text-decoration: underline;
+  }
 
 }
 
@@ -36,7 +39,7 @@
 .title {
     @include open-sans-bold(2.5rem);
     color: $text-color;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 
     &-small {
         font-size: 1.6rem;
@@ -52,6 +55,10 @@
         @media (max-width: 772px) {
             font-size: 4rem;
         }
+    }
+
+    &-bigger {
+        font-size: 5rem;
     }
 
     &-prim-color {
@@ -72,4 +79,11 @@
         text-align: center;
     }
 
+    &-normal {
+        text-transform: none;
+    }
+
+    &-italic {
+        font-style: italic;
+    }
 }

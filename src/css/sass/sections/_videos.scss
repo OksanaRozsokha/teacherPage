@@ -1,0 +1,11 @@
+.videos {
+    background: #5D4157; 
+    background: -webkit-linear-gradient(to right, #A8CABA, #5D4157); 
+    background: linear-gradient(to right, #A8CABA, #5D4157); 
+}
+.videos-list__item {
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
